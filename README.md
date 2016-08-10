@@ -92,6 +92,7 @@ If for some reason the Auto Setup doesn't work, you'll need to do a manual setup
       display repo information but in the end I decided that would have just been
       excess. Yes, it would have showcased my skills but it wouldn't have been
       as user-friendly.
+    - There are no tests included because with such a small app I didn't feel it was necessary.
     - If I had more time:
         - I would have added logging for when the Github API is accessed and the
           repo info is saved.
