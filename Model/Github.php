@@ -179,7 +179,7 @@ class Github
             // We don't want to create duplicate entries
             if (!$stmt->fetch()) {
                 // If it's new add it!
-                $repoStmt = Db::$pdo->prepare("INSERT INTO repos SET
+                $repoStmt = Db::$pdo->prepare("INSERT INTO repos
                             (repo_id, name, url, description, stars, pushed, created)
                             VALUES (:repo_id, :name, :url, :description, :stars, :pushed, :created)");
             } else {
