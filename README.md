@@ -100,5 +100,9 @@ If for some reason the Auto Setup doesn't work, you'll need to do a manual setup
           repo info is saved.
         - I would build out the interface some more. Like adding more repo info,
           more views, and more fancy stuff.
+        - I would fix the current Github model to only keep the current top 100. As the code is,
+          when there's a change in the top 100 repos it would end up adding the new repos and
+          keeping the old repos. This should be changed to look and see if there's a diff in
+          the top 100 and discard the ones that have fallen out of the top and then add the new ones.
 
 
