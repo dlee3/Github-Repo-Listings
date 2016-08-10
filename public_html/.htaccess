@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+
+
+# make sure Authorization header is set
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
+
+
+# if httpS is not on, and domain is dartmusic.com (not local), redirect to https
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_HOST} dartmusic.com
+RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+
+
+# redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+
+
+# redirect to index
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+

@@ -1,0 +1,35 @@
+/**
+ * Common mixins
+ */
+
+
+
+/*
+ * media query sizes based on bootstrap
+ * CSS:
+ * @media screen and (max-width: $screen-sm-max) {
+ *    display: none;
+ * }
+ *
+ */
+$screen-xs-min: 480px;
+$screen-xs-max: 479px;
+$screen-sm-min: 768px;
+$screen-sm-max: 767px;
+$screen-md-min: 992px;
+$screen-md-max: 991px;
+$screen-lg-min: 1200px;
+$screen-lg-max: 1199px;
+
+
+$main-background: #dcdcdc;
+
+$color-darkest: #2d4050;
+$color-darker: #455970;
+$white: white;
+$star: gold;
+
+
+$margin: 20px;
+
+$form-container-padding: 30px 30px 20px;

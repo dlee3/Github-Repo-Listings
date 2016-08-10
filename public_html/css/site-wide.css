@@ -1,0 +1,64 @@
+/*
+ * Project Name: Dart Music 2015, The Jake
+ * Version: 1.0.0
+ * Author: Dart Music
+*/
+/**
+ * Common mixins
+ */
+/*
+ * media query sizes based on bootstrap
+ * CSS:
+ * @media screen and (max-width: $screen-sm-max) {
+ *    display: none;
+ * }
+ *
+ */
+/**
+ * Site-wide styles
+ */
+* {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter; }
+
+body {
+  color: #2d4050;
+  background: #dcdcdc; }
+
+.row {
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
+.title-container {
+  padding: 20px;
+  padding-top: 60px;
+  color: white;
+  background: #2d4050;
+  border-left: #dcdcdc solid 5px;
+  border-right: #dcdcdc solid 5px; }
+
+.content-container {
+  padding: 20px;
+  background: white;
+  border: #dcdcdc solid 5px; }
+  .content-container .row-btn {
+    margin-top: 20px; }
+  .content-container .repo-btn {
+    margin-right: 20px; }
+  .content-container .star-icon {
+    color: gold; }
+
+.clickable-row:hover {
+  background: #dcdcdc;
+  cursor: pointer; }
+
+.hidden {
+  display: none; }
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #455970;
+  color: white; }
+
+/*# sourceMappingURL=site-wide.css.map */

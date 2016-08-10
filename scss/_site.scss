@@ -1,0 +1,63 @@
+/**
+ * Site-wide styles
+ */
+
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+body {
+	color: $color-darkest;
+    background: $main-background;
+}
+
+.row { // This is to give more space between the Details rows
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.title-container {
+  padding: $margin;
+  padding-top: $margin*3;
+  color: $white;
+  background: $color-darkest;
+  border-left: $main-background solid 5px;
+  border-right: $main-background solid 5px;
+}
+
+.content-container {
+  padding: $margin;
+  background: $white;
+  border: $main-background solid 5px;
+
+  .row-btn {
+    margin-top: $margin;
+  }
+  .repo-btn {
+      margin-right: $margin;
+  }
+
+  .star-icon {
+    color: $star;
+  }
+}
+
+.clickable-row:hover {
+    background: $main-background;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+  margin-top: $margin*2;
+  padding: $margin;
+  background: $color-darker;
+  color: $white;
+}
+
+
