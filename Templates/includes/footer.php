@@ -8,7 +8,7 @@
 
     <footer class="container">
         <div class="row">
-            <p class="col-xs-12 text-center">&copy; Copyright <?= date('Y')?> by David Lee</p>
+            <p class="col-xs-12 text-center">&copy; Copyright <?= date('Y')?> David Lee</p>
         </div>
     </footer>
   </body>
